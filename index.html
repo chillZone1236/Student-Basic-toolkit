@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        StudentToolkit - Free Student Calculators & Study Tools
+    </title>
+
+    <meta
+        name="description"
+        content="Free student tools including percentage calculator, required marks calculator, average calculator, CGPA calculator, age calculator and study timer."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <link
+        rel="canonical"
+        href="https://chillzone1236.github.io/Student-Basic-toolkit/"
+    >
+
+    <meta
+        name="theme-color"
+        content="#4f46e5"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <!-- Google Analytics -->
+
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-T3VMQFW8M5">
+    </script>
+
+    <script>
+
+        window.dataLayer =
+            window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag(
+            'js',
+            new Date()
+        );
+
+        gtag(
+            'config',
+            'G-T3VMQFW8M5'
+        );
+
+    </script>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            Student<span>Toolkit</span>
+        </div>
+
+        <nav>
+
+            <a href="#tools">
+                Tools
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- MAIN -->
+
+    <main>
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <p class="tag">
+                FREE STUDENT TOOLS
+            </p>
+
+            <h1>
+                Everything Students
+                <br>
+                <span>Need in One Place</span>
+            </h1>
+
+            <p class="subtitle">
+                Free calculators and useful tools designed for students.
+            </p>
+
+        </section>
+
+
+
+        <!-- SEO INTRO -->
+
+        <section class="seo-intro">
+
+            <h2>
+                Free Student Calculators & Study Tools
+            </h2>
+
+            <p>
+                StudentToolkit is a free collection of simple online
+                tools made for students. Calculate your percentage,
+                required marks, average marks, CGPA, age, or use the
+                study timer to manage your study sessions.
+            </p>
+
+            <p>
+                All tools are simple to use and work on both mobile
+                phones and computers. No sign-up or payment is required.
+            </p>
+
+        </section>
+
+
+
+        <!-- TOOLS -->
+
+        <section id="tools">
+
+            <div class="section-title">
+
+                <h2>
+                    Student Tools
+                </h2>
+
+                <p>
+                    Choose a tool below
+                </p>
+
+            </div>
+
+
+
+            <div class="tool-grid">
+
+
+                <!-- PERCENTAGE -->
+
+                <div class="tool-card">
+
+                    <div class="icon">
+                        🧮
+                    </div>
+
+                    <h3>
+                        Percentage Calculator
+                    </h3>
+
+                    <p>
+                        Calculate your marks percentage instantly.
+                    </p>
+
+                    <button
+                        onclick="openTool('percentage')"
+                    >
+                        Open Calculator
+                    </button>
+
+                </div>
+
+
+
+                <!-- REQUIRED MARKS -->
+
+                <div class="tool-card">
+
+                    <div class="icon">
+                        🎯
+                    </div>
+
+                    <h3>
+                        Required Marks
+                    </h3>
+
+                    <p>
+                        Find the marks needed to reach your target percentage.
+                    </p>
+
+                    <button
+                        onclick="openTool('required')"
+                    >
+                        Open Calculator
+                    </button>
+
+                </div>
+
+
+
+                <!-- AVERAGE -->
+
+                <div class="tool-card">
+
+                    <div class="icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        Average Calculator
+                    </h3>
+
+                    <p>
+                        Calculate the average of multiple marks.
+                    </p>
+
+                    <button
+                        onclick="openTool('average')"
+                    >
+                        Open Calculator
+                    </button>
+
+                </div>
+
+
+
+                <!-- CGPA -->
+
+                <div class="tool-card">
+
+                    <div class="icon">
+                        🔢
+                    </div>
+
+                    <h3>
+                        CGPA Calculator
+                    </h3>
+
+                    <p>
+                        Convert your CGPA into an approximate percentage.
+                    </p>
+
+                    <button
+                        onclick="openTool('cgpa')"
+                    >
+                        Open Calculator
+                    </button>
+
+                </div>
+
+
+
+                <!-- AGE -->
+
+                <div class="tool-card">
+
+                    <div class="icon">
+                        🎂
+                    </div>
+
+                    <h3>
+                        Age Calculator
+                    </h3>
+
+                    <p>
+                        Calculate your exact age from your date of birth.
+                    </p>
+
+                    <button
+                        onclick="openTool('age')"
+                    >
+                        Open Calculator
+                    </button>
+
+                </div>
+
+
+
+                <!-- STUDY TIMER -->
+
+                <div class="tool-card">
+
+                    <div class="icon">
+                        ⏱️
+                    </div>
+
+                    <h3>
+                        Study Timer
+                    </h3>
+
+                    <p>
+                        Choose your study duration and stay focused.
+                    </p>
+
+                    <button
+                        onclick="openTool('timer')"
+                    >
+                        Open Timer
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CALCULATOR AREA -->
+
+        <section
+            class="calculator-area"
+            id="calculatorArea"
+        >
+
+
+            <!-- PERCENTAGE -->
+
+            <div
+                class="calculator hidden"
+                id="percentage"
+            >
+
+                <h2>
+                    Percentage Calculator
+                </h2>
+
+                <p>
+                    Enter your marks below.
+                </p>
+
+                <input
+                    type="number"
+                    id="obtained"
+                    placeholder="Marks obtained"
+                >
+
+                <input
+                    type="number"
+                    id="total"
+                    placeholder="Total marks"
+                >
+
+                <button
+                    onclick="calculatePercentage()"
+                >
+                    Calculate
+                </button>
+
+                <button
+                    class="reset"
+                    onclick="resetTool('percentage')"
+                >
+                    Reset
+                </button>
+
+                <div
+                    class="result"
+                    id="percentageResult"
+                ></div>
+
+            </div>
+
+
+
+            <!-- REQUIRED MARKS -->
+
+            <div
+                class="calculator hidden"
+                id="required"
+            >
+
+                <h2>
+                    Required Marks Calculator
+                </h2>
+
+                <p>
+                    Find how many marks you need for your target percentage.
+                </p>
+
+                <input
+                    type="number"
+                    id="currentMarks"
+                    placeholder="Marks already obtained"
+                >
+
+                <input
+                    type="number"
+                    id="remainingMarks"
+                    placeholder="Total remaining marks"
+                >
+
+                <input
+                    type="number"
+                    id="targetPercentage"
+                    placeholder="Target percentage"
+                >
+
+                <button
+                    onclick="calculateRequired()"
+                >
+                    Calculate
+                </button>
+
+                <button
+                    class="reset"
+                    onclick="resetTool('required')"
+                >
+                    Reset
+                </button>
+
+                <div
+                    class="result"
+                    id="requiredResult"
+                ></div>
+
+            </div>
+
+
+
+            <!-- AVERAGE -->
+
+            <div
+                class="calculator hidden"
+                id="average"
+            >
+
+                <h2>
+                    Average Marks Calculator
+                </h2>
+
+                <p>
+                    Enter marks separated by commas.
+                </p>
+
+                <input
+                    type="text"
+                    id="marksList"
+                    placeholder="Example: 80, 75, 92, 88"
+                >
+
+                <button
+                    onclick="calculateAverage()"
+                >
+                    Calculate
+                </button>
+
+                <button
+                    class="reset"
+                    onclick="resetTool('average')"
+                >
+                    Reset
+                </button>
+
+                <div
+                    class="result"
+                    id="averageResult"
+                ></div>
+
+            </div>
+
+
+
+            <!-- CGPA -->
+
+            <div
+                class="calculator hidden"
+                id="cgpa"
+            >
+
+                <h2>
+                    CGPA → Percentage
+                </h2>
+
+                <p>
+                    Enter your CGPA.
+                </p>
+
+                <input
+                    type="number"
+                    id="cgpaValue"
+                    placeholder="Example: 8.5"
+                    step="0.01"
+                >
+
+                <button
+                    onclick="calculateCGPA()"
+                >
+                    Convert
+                </button>
+
+                <button
+                    class="reset"
+                    onclick="resetTool('cgpa')"
+                >
+                    Reset
+                </button>
+
+                <div
+                    class="result"
+                    id="cgpaResult"
+                ></div>
+
+            </div>
+
+
+
+            <!-- AGE -->
+
+            <div
+                class="calculator hidden"
+                id="age"
+            >
+
+                <h2>
+                    Age Calculator
+                </h2>
+
+                <p>
+                    Enter your date of birth.
+                </p>
+
+                <input
+                    type="date"
+                    id="birthDate"
+                >
+
+                <button
+                    onclick="calculateAge()"
+                >
+                    Calculate Age
+                </button>
+
+                <button
+                    class="reset"
+                    onclick="resetTool('age')"
+                >
+                    Reset
+                </button>
+
+                <div
+                    class="result"
+                    id="ageResult"
+                ></div>
+
+            </div>
+
+
+
+            <!-- STUDY TIMER -->
+
+            <div
+                class="calculator hidden"
+                id="timer"
+            >
+
+                <h2>
+                    Study Timer
+                </h2>
+
+                <p>
+                    Choose how long you want to study.
+                </p>
+
+
+                <div class="time-inputs">
+
+                    <div>
+
+                        <label>
+                            Hours
+                        </label>
+
+                        <input
+                            type="number"
+                            id="studyHours"
+                            min="0"
+                            max="23"
+                            placeholder="0"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label>
+                            Minutes
+                        </label>
+
+                        <input
+                            type="number"
+                            id="studyMinutes"
+                            min="0"
+                            max="59"
+                            placeholder="30"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="quick-times">
+
+                    <button
+                        onclick="setStudyTime(25)"
+                    >
+                        25 min
+                    </button>
+
+                    <button
+                        onclick="setStudyTime(45)"
+                    >
+                        45 min
+                    </button>
+
+                    <button
+                        onclick="setStudyTime(60)"
+                    >
+                        1 hour
+                    </button>
+
+                    <button
+                        onclick="setStudyTime(120)"
+                    >
+                        2 hours
+                    </button>
+
+                </div>
+
+
+
+                <div
+                    class="timer-display"
+                    id="timerDisplay"
+                >
+                    00:00:00
+                </div>
+
+
+
+                <button
+                    onclick="setCustomTimer()"
+                >
+                    Set Timer
+                </button>
+
+                <button
+                    onclick="startTimer()"
+                >
+                    ▶ Start
+                </button>
+
+                <button
+                    onclick="pauseTimer()"
+                >
+                    ⏸ Pause
+                </button>
+
+                <button
+                    class="reset"
+                    onclick="resetTimer()"
+                >
+                    ↻ Reset
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ABOUT -->
+
+        <section
+            class="info"
+            id="about"
+        >
+
+            <h2>
+                Why StudentToolkit?
+            </h2>
+
+            <p>
+                StudentToolkit provides simple and free tools
+                that students can use every day.
+            </p>
+
+            <div class="formula">
+
+                Simple.
+                Fast.
+                Free.
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FAQ -->
+
+        <section class="faq">
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+
+            <div class="faq-item">
+
+                <h3>
+                    How can I calculate my percentage?
+                </h3>
+
+                <p>
+                    Enter your obtained marks and total marks in the
+                    Percentage Calculator. It will calculate your
+                    percentage instantly.
+                </p>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <h3>
+                    Is StudentToolkit free?
+                </h3>
+
+                <p>
+                    Yes. StudentToolkit is free to use and does not
+                    require an account.
+                </p>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <h3>
+                    Can I use the study timer on my phone?
+                </h3>
+
+                <p>
+                    Yes. StudentToolkit works on both mobile phones
+                    and desktop computers.
+                </p>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <h3>
+                    What student calculators are available?
+                </h3>
+
+                <p>
+                    StudentToolkit currently includes percentage,
+                    required marks, average, CGPA, age and study
+                    timer tools.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 StudentToolkit • Free Student Tools
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
