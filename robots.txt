@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chillzone1236.github.io/Student-Basic-toolkit/sitemap.xml
