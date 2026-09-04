@@ -1,815 +1,945 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>
-        StudentToolkit - Free Student Calculators & Study Tools
-    </title>
+    <title>Student Toolkit | Free Student Calculators & Study Tools</title>
 
-    <meta
-        name="description"
-        content="Free student tools including percentage calculator, required marks calculator, average calculator, CGPA calculator, age calculator and study timer."
-    >
+    <meta name="description"
+        content="Free student toolkit with GPA, CGPA, SGPA, percentage, attendance, exam countdown, study timer, scientific calculator, notes and productivity tools.">
 
-    <meta
-        name="robots"
-        content="index, follow"
-    >
+    <meta name="keywords"
+        content="student toolkit, student tools, GPA calculator, CGPA calculator, SGPA calculator, percentage calculator, attendance calculator, study timer, exam countdown, scientific calculator, study planner, student calculator">
 
-    <link
-        rel="canonical"
-        href="https://chillzone1236.github.io/Student-Basic-toolkit/"
-    >
+    <meta name="author" content="Student Toolkit">
 
-    <meta
-        name="theme-color"
-        content="#4f46e5"
-    >
+    <meta name="robots" content="index, follow">
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+    <link rel="canonical"
+        href="https://chillzone1236.github.io/Student-Basic-toolkit/">
 
+    <meta property="og:title"
+        content="Student Toolkit | Free Student Tools">
 
-    <!-- Google Analytics -->
+    <meta property="og:description"
+        content="Simple, fast and free tools made for students.">
 
-    <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-T3VMQFW8M5">
+    <meta property="og:type" content="website">
+
+    <meta property="og:url"
+        content="https://chillzone1236.github.io/Student-Basic-toolkit/">
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"WebSite",
+      "name":"Student Toolkit",
+      "url":"https://chillzone1236.github.io/Student-Basic-toolkit/",
+      "description":"Free online tools for students including calculators and study utilities."
+    }
     </script>
 
-    <script>
-
-        window.dataLayer =
-            window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag(
-            'js',
-            new Date()
-        );
-
-        gtag(
-            'config',
-            'G-T3VMQFW8M5'
-        );
-
-    </script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+<div class="cursor-glow"></div>
 
-    <!-- HEADER -->
+<div class="background-orb orb-one"></div>
+<div class="background-orb orb-two"></div>
 
-    <header>
+<!-- NAVBAR -->
 
-        <div class="logo">
-            Student<span>Toolkit</span>
-        </div>
+<header class="navbar">
 
-        <nav>
+    <div class="nav-container">
 
-            <a href="#tools">
-                Tools
-            </a>
+        <a href="#home" class="brand">
 
-            <a href="#about">
-                About
-            </a>
+            <div class="brand-logo">◇</div>
+
+            <span>Student Toolkit</span>
+
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#home">Home</a>
+            <a href="#tools">Tools</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#about">About</a>
+
+            <button id="themeToggle"
+                    class="theme-btn">
+                ☾
+            </button>
 
         </nav>
 
-    </header>
+    </div>
 
+</header>
 
 
-    <!-- MAIN -->
+<main>
 
-    <main>
+<!-- HERO -->
 
+<section id="home" class="hero">
 
-        <!-- HERO -->
+    <div class="hero-content">
 
-        <section class="hero">
+        <div class="hero-badge">
+            <span class="status-dot"></span>
+            FREE STUDENT TOOLS
+        </div>
 
-            <p class="tag">
-                FREE STUDENT TOOLS
-            </p>
-
-            <h1>
-                Everything Students
-                <br>
-                <span>Need in One Place</span>
-            </h1>
-
-            <p class="subtitle">
-                Free calculators and useful tools designed for students.
-            </p>
-
-        </section>
-
-
-
-        <!-- SEO INTRO -->
-
-        <section class="seo-intro">
-
-            <h2>
-                Free Student Calculators & Study Tools
-            </h2>
-
-            <p>
-                StudentToolkit is a free collection of simple online
-                tools made for students. Calculate your percentage,
-                required marks, average marks, CGPA, age, or use the
-                study timer to manage your study sessions.
-            </p>
-
-            <p>
-                All tools are simple to use and work on both mobile
-                phones and computers. No sign-up or payment is required.
-            </p>
-
-        </section>
-
-
-
-        <!-- TOOLS -->
-
-        <section id="tools">
-
-            <div class="section-title">
-
-                <h2>
-                    Student Tools
-                </h2>
-
-                <p>
-                    Choose a tool below
-                </p>
-
-            </div>
-
-
-
-            <div class="tool-grid">
-
-
-                <!-- PERCENTAGE -->
-
-                <div class="tool-card">
-
-                    <div class="icon">
-                        🧮
-                    </div>
-
-                    <h3>
-                        Percentage Calculator
-                    </h3>
-
-                    <p>
-                        Calculate your marks percentage instantly.
-                    </p>
-
-                    <button
-                        onclick="openTool('percentage')"
-                    >
-                        Open Calculator
-                    </button>
-
-                </div>
-
-
-
-                <!-- REQUIRED MARKS -->
-
-                <div class="tool-card">
-
-                    <div class="icon">
-                        🎯
-                    </div>
-
-                    <h3>
-                        Required Marks
-                    </h3>
-
-                    <p>
-                        Find the marks needed to reach your target percentage.
-                    </p>
-
-                    <button
-                        onclick="openTool('required')"
-                    >
-                        Open Calculator
-                    </button>
-
-                </div>
-
-
-
-                <!-- AVERAGE -->
-
-                <div class="tool-card">
-
-                    <div class="icon">
-                        📊
-                    </div>
-
-                    <h3>
-                        Average Calculator
-                    </h3>
-
-                    <p>
-                        Calculate the average of multiple marks.
-                    </p>
-
-                    <button
-                        onclick="openTool('average')"
-                    >
-                        Open Calculator
-                    </button>
-
-                </div>
-
-
-
-                <!-- CGPA -->
-
-                <div class="tool-card">
-
-                    <div class="icon">
-                        🔢
-                    </div>
-
-                    <h3>
-                        CGPA Calculator
-                    </h3>
-
-                    <p>
-                        Convert your CGPA into an approximate percentage.
-                    </p>
-
-                    <button
-                        onclick="openTool('cgpa')"
-                    >
-                        Open Calculator
-                    </button>
-
-                </div>
-
-
-
-                <!-- AGE -->
-
-                <div class="tool-card">
-
-                    <div class="icon">
-                        🎂
-                    </div>
-
-                    <h3>
-                        Age Calculator
-                    </h3>
-
-                    <p>
-                        Calculate your exact age from your date of birth.
-                    </p>
-
-                    <button
-                        onclick="openTool('age')"
-                    >
-                        Open Calculator
-                    </button>
-
-                </div>
-
-
-
-                <!-- STUDY TIMER -->
-
-                <div class="tool-card">
-
-                    <div class="icon">
-                        ⏱️
-                    </div>
-
-                    <h3>
-                        Study Timer
-                    </h3>
-
-                    <p>
-                        Choose your study duration and stay focused.
-                    </p>
-
-                    <button
-                        onclick="openTool('timer')"
-                    >
-                        Open Timer
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- CALCULATOR AREA -->
-
-        <section
-            class="calculator-area"
-            id="calculatorArea"
-        >
-
-
-            <!-- PERCENTAGE -->
-
-            <div
-                class="calculator hidden"
-                id="percentage"
-            >
-
-                <h2>
-                    Percentage Calculator
-                </h2>
-
-                <p>
-                    Enter your marks below.
-                </p>
-
-                <input
-                    type="number"
-                    id="obtained"
-                    placeholder="Marks obtained"
-                >
-
-                <input
-                    type="number"
-                    id="total"
-                    placeholder="Total marks"
-                >
-
-                <button
-                    onclick="calculatePercentage()"
-                >
-                    Calculate
-                </button>
-
-                <button
-                    class="reset"
-                    onclick="resetTool('percentage')"
-                >
-                    Reset
-                </button>
-
-                <div
-                    class="result"
-                    id="percentageResult"
-                ></div>
-
-            </div>
-
-
-
-            <!-- REQUIRED MARKS -->
-
-            <div
-                class="calculator hidden"
-                id="required"
-            >
-
-                <h2>
-                    Required Marks Calculator
-                </h2>
-
-                <p>
-                    Find how many marks you need for your target percentage.
-                </p>
-
-                <input
-                    type="number"
-                    id="currentMarks"
-                    placeholder="Marks already obtained"
-                >
-
-                <input
-                    type="number"
-                    id="remainingMarks"
-                    placeholder="Total remaining marks"
-                >
-
-                <input
-                    type="number"
-                    id="targetPercentage"
-                    placeholder="Target percentage"
-                >
-
-                <button
-                    onclick="calculateRequired()"
-                >
-                    Calculate
-                </button>
-
-                <button
-                    class="reset"
-                    onclick="resetTool('required')"
-                >
-                    Reset
-                </button>
-
-                <div
-                    class="result"
-                    id="requiredResult"
-                ></div>
-
-            </div>
-
-
-
-            <!-- AVERAGE -->
-
-            <div
-                class="calculator hidden"
-                id="average"
-            >
-
-                <h2>
-                    Average Marks Calculator
-                </h2>
-
-                <p>
-                    Enter marks separated by commas.
-                </p>
-
-                <input
-                    type="text"
-                    id="marksList"
-                    placeholder="Example: 80, 75, 92, 88"
-                >
-
-                <button
-                    onclick="calculateAverage()"
-                >
-                    Calculate
-                </button>
-
-                <button
-                    class="reset"
-                    onclick="resetTool('average')"
-                >
-                    Reset
-                </button>
-
-                <div
-                    class="result"
-                    id="averageResult"
-                ></div>
-
-            </div>
-
-
-
-            <!-- CGPA -->
-
-            <div
-                class="calculator hidden"
-                id="cgpa"
-            >
-
-                <h2>
-                    CGPA → Percentage
-                </h2>
-
-                <p>
-                    Enter your CGPA.
-                </p>
-
-                <input
-                    type="number"
-                    id="cgpaValue"
-                    placeholder="Example: 8.5"
-                    step="0.01"
-                >
-
-                <button
-                    onclick="calculateCGPA()"
-                >
-                    Convert
-                </button>
-
-                <button
-                    class="reset"
-                    onclick="resetTool('cgpa')"
-                >
-                    Reset
-                </button>
-
-                <div
-                    class="result"
-                    id="cgpaResult"
-                ></div>
-
-            </div>
-
-
-
-            <!-- AGE -->
-
-            <div
-                class="calculator hidden"
-                id="age"
-            >
-
-                <h2>
-                    Age Calculator
-                </h2>
-
-                <p>
-                    Enter your date of birth.
-                </p>
-
-                <input
-                    type="date"
-                    id="birthDate"
-                >
-
-                <button
-                    onclick="calculateAge()"
-                >
-                    Calculate Age
-                </button>
-
-                <button
-                    class="reset"
-                    onclick="resetTool('age')"
-                >
-                    Reset
-                </button>
-
-                <div
-                    class="result"
-                    id="ageResult"
-                ></div>
-
-            </div>
-
-
-
-            <!-- STUDY TIMER -->
-
-            <div
-                class="calculator hidden"
-                id="timer"
-            >
-
-                <h2>
-                    Study Timer
-                </h2>
-
-                <p>
-                    Choose how long you want to study.
-                </p>
-
-
-                <div class="time-inputs">
-
-                    <div>
-
-                        <label>
-                            Hours
-                        </label>
-
-                        <input
-                            type="number"
-                            id="studyHours"
-                            min="0"
-                            max="23"
-                            placeholder="0"
-                        >
-
-                    </div>
-
-
-                    <div>
-
-                        <label>
-                            Minutes
-                        </label>
-
-                        <input
-                            type="number"
-                            id="studyMinutes"
-                            min="0"
-                            max="59"
-                            placeholder="30"
-                        >
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="quick-times">
-
-                    <button
-                        onclick="setStudyTime(25)"
-                    >
-                        25 min
-                    </button>
-
-                    <button
-                        onclick="setStudyTime(45)"
-                    >
-                        45 min
-                    </button>
-
-                    <button
-                        onclick="setStudyTime(60)"
-                    >
-                        1 hour
-                    </button>
-
-                    <button
-                        onclick="setStudyTime(120)"
-                    >
-                        2 hours
-                    </button>
-
-                </div>
-
-
-
-                <div
-                    class="timer-display"
-                    id="timerDisplay"
-                >
-                    00:00:00
-                </div>
-
-
-
-                <button
-                    onclick="setCustomTimer()"
-                >
-                    Set Timer
-                </button>
-
-                <button
-                    onclick="startTimer()"
-                >
-                    ▶ Start
-                </button>
-
-                <button
-                    onclick="pauseTimer()"
-                >
-                    ⏸ Pause
-                </button>
-
-                <button
-                    class="reset"
-                    onclick="resetTimer()"
-                >
-                    ↻ Reset
-                </button>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ABOUT -->
-
-        <section
-            class="info"
-            id="about"
-        >
-
-            <h2>
-                Why StudentToolkit?
-            </h2>
-
-            <p>
-                StudentToolkit provides simple and free tools
-                that students can use every day.
-            </p>
-
-            <div class="formula">
-
-                Simple.
-                Fast.
-                Free.
-
-            </div>
-
-        </section>
-
-
-
-        <!-- FAQ -->
-
-        <section class="faq">
-
-            <h2>
-                Frequently Asked Questions
-            </h2>
-
-
-            <div class="faq-item">
-
-                <h3>
-                    How can I calculate my percentage?
-                </h3>
-
-                <p>
-                    Enter your obtained marks and total marks in the
-                    Percentage Calculator. It will calculate your
-                    percentage instantly.
-                </p>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <h3>
-                    Is StudentToolkit free?
-                </h3>
-
-                <p>
-                    Yes. StudentToolkit is free to use and does not
-                    require an account.
-                </p>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <h3>
-                    Can I use the study timer on my phone?
-                </h3>
-
-                <p>
-                    Yes. StudentToolkit works on both mobile phones
-                    and desktop computers.
-                </p>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <h3>
-                    What student calculators are available?
-                </h3>
-
-                <p>
-                    StudentToolkit currently includes percentage,
-                    required marks, average, CGPA, age and study
-                    timer tools.
-                </p>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- FOOTER -->
-
-    <footer>
+        <h1>
+            Your study life,
+            <span>simplified.</span>
+        </h1>
 
         <p>
-            © 2026 StudentToolkit • Free Student Tools
+            Calculators, productivity tools and everyday utilities
+            built to make student life a little easier.
         </p>
 
-    </footer>
+        <div class="hero-buttons">
+
+            <a href="#tools"
+               class="primary-btn">
+                Explore Tools <span>↗</span>
+            </a>
+
+            <a href="#reviews"
+               class="secondary-btn">
+                Leave a Review
+            </a>
+
+        </div>
+
+    </div>
 
 
+    <div class="hero-visual">
 
-    <script src="script.js"></script>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="floating-panel">
+
+            <div class="panel-top">
+                <span>STUDENT TOOLKIT</span>
+                <span class="panel-dot"></span>
+            </div>
+
+            <div class="panel-main-icon">
+                ◇
+            </div>
+
+            <h3>
+                Study smarter.
+            </h3>
+
+            <p>
+                Less calculation.
+                More concentration.
+            </p>
+
+            <div class="mini-stats">
+
+                <div>
+                    <strong>20+</strong>
+                    <span>Tools</span>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Free</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TOOLS -->
+
+<section id="tools"
+         class="tools-section">
+
+    <div class="section-heading">
+
+        <div class="section-label">
+            TOOLKIT
+        </div>
+
+        <h2>
+            Everything students
+            <span>actually need.</span>
+        </h2>
+
+        <p>
+            Pick a tool, enter your numbers and get your answer instantly.
+        </p>
+
+    </div>
+
+
+    <div class="tools-grid">
+
+
+        <!-- GPA -->
+
+        <article class="tool-card">
+
+            <div class="card-number">01</div>
+
+            <div class="tool-icon purple">GPA</div>
+
+            <div class="card-content">
+
+                <div class="card-category">ACADEMICS</div>
+
+                <h3>GPA Calculator</h3>
+
+                <p>
+                    Calculate GPA using your grades and credits.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('gpa')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- CGPA -->
+
+        <article class="tool-card">
+
+            <div class="card-number">02</div>
+
+            <div class="tool-icon cyan">CG</div>
+
+            <div class="card-content">
+
+                <div class="card-category">ACADEMICS</div>
+
+                <h3>CGPA Calculator</h3>
+
+                <p>
+                    Calculate your cumulative GPA quickly.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('cgpa')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- SGPA -->
+
+        <article class="tool-card">
+
+            <div class="card-number">03</div>
+
+            <div class="tool-icon blue">SG</div>
+
+            <div class="card-content">
+
+                <div class="card-category">ACADEMICS</div>
+
+                <h3>SGPA Calculator</h3>
+
+                <p>
+                    Calculate semester GPA from credits and grades.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('sgpa')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- PERCENTAGE -->
+
+        <article class="tool-card">
+
+            <div class="card-number">04</div>
+
+            <div class="tool-icon green">%</div>
+
+            <div class="card-content">
+
+                <div class="card-category">MATH</div>
+
+                <h3>Percentage Calculator</h3>
+
+                <p>
+                    Find marks percentage instantly.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('percentage')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- GRADE -->
+
+        <article class="tool-card">
+
+            <div class="card-number">05</div>
+
+            <div class="tool-icon purple">A+</div>
+
+            <div class="card-content">
+
+                <div class="card-category">ACADEMICS</div>
+
+                <h3>Grade Calculator</h3>
+
+                <p>
+                    Convert marks into percentage and grade.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('grade')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- FINAL EXAM -->
+
+        <article class="tool-card">
+
+            <div class="card-number">06</div>
+
+            <div class="tool-icon orange">F</div>
+
+            <div class="card-content">
+
+                <div class="card-category">EXAMS</div>
+
+                <h3>Final Exam Calculator</h3>
+
+                <p>
+                    Find the marks needed in your final exam.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('final')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- ATTENDANCE -->
+
+        <article class="tool-card">
+
+            <div class="card-number">07</div>
+
+            <div class="tool-icon pink">%</div>
+
+            <div class="card-content">
+
+                <div class="card-category">STUDENT LIFE</div>
+
+                <h3>Attendance Calculator</h3>
+
+                <p>
+                    Find your attendance and required classes.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('attendance')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- TARGET GPA -->
+
+        <article class="tool-card">
+
+            <div class="card-number">08</div>
+
+            <div class="tool-icon blue">🎯</div>
+
+            <div class="card-content">
+
+                <div class="card-category">GOALS</div>
+
+                <h3>Target GPA</h3>
+
+                <p>
+                    Estimate the GPA required to reach your target.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('target')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- POMODORO -->
+
+        <article class="tool-card">
+
+            <div class="card-number">09</div>
+
+            <div class="tool-icon orange">25</div>
+
+            <div class="card-content">
+
+                <div class="card-category">PRODUCTIVITY</div>
+
+                <h3>Pomodoro Timer</h3>
+
+                <p>
+                    Focus with customizable study sessions.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('pomodoro')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- COUNTDOWN -->
+
+        <article class="tool-card">
+
+            <div class="card-number">10</div>
+
+            <div class="tool-icon green">⌛</div>
+
+            <div class="card-content">
+
+                <div class="card-category">EXAMS</div>
+
+                <h3>Exam Countdown</h3>
+
+                <p>
+                    See exactly how much time remains.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('countdown')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- STUDY HOURS -->
+
+        <article class="tool-card">
+
+            <div class="card-number">11</div>
+
+            <div class="tool-icon cyan">⏱</div>
+
+            <div class="card-content">
+
+                <div class="card-category">PRODUCTIVITY</div>
+
+                <h3>Study Hours Calculator</h3>
+
+                <p>
+                    Calculate daily and weekly study hours.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('studyhours')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- SCIENTIFIC -->
+
+        <article class="tool-card">
+
+            <div class="card-number">12</div>
+
+            <div class="tool-icon purple">√</div>
+
+            <div class="card-content">
+
+                <div class="card-category">MATH</div>
+
+                <h3>Scientific Calculator</h3>
+
+                <p>
+                    Quick calculations for everyday study.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('scientific')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- UNIT -->
+
+        <article class="tool-card">
+
+            <div class="card-number">13</div>
+
+            <div class="tool-icon blue">↔</div>
+
+            <div class="card-content">
+
+                <div class="card-category">UTILITY</div>
+
+                <h3>Unit Converter</h3>
+
+                <p>
+                    Convert common units instantly.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('unit')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- AGE -->
+
+        <article class="tool-card">
+
+            <div class="card-number">14</div>
+
+            <div class="tool-icon pink">AGE</div>
+
+            <div class="card-content">
+
+                <div class="card-category">UTILITY</div>
+
+                <h3>Age Calculator</h3>
+
+                <p>
+                    Calculate your age from your birth date.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('age')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- BUDGET -->
+
+        <article class="tool-card">
+
+            <div class="card-number">15</div>
+
+            <div class="tool-icon green">₹</div>
+
+            <div class="card-content">
+
+                <div class="card-category">STUDENT LIFE</div>
+
+                <h3>Student Budget</h3>
+
+                <p>
+                    Track your monthly student expenses.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('budget')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- WORD COUNTER -->
+
+        <article class="tool-card">
+
+            <div class="card-number">16</div>
+
+            <div class="tool-icon cyan">Aa</div>
+
+            <div class="card-content">
+
+                <div class="card-category">WRITING</div>
+
+                <h3>Word Counter</h3>
+
+                <p>
+                    Count words, characters and sentences.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('words')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- DATE -->
+
+        <article class="tool-card">
+
+            <div class="card-number">17</div>
+
+            <div class="tool-icon orange">📅</div>
+
+            <div class="card-content">
+
+                <div class="card-category">UTILITY</div>
+
+                <h3>Date Calculator</h3>
+
+                <p>
+                    Calculate the days between two dates.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('date')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- NOTES -->
+
+        <article class="tool-card">
+
+            <div class="card-number">18</div>
+
+            <div class="tool-icon purple">✎</div>
+
+            <div class="card-content">
+
+                <div class="card-category">PRODUCTIVITY</div>
+
+                <h3>Quick Notes</h3>
+
+                <p>
+                    Save small notes directly in your browser.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('notes')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- TODO -->
+
+        <article class="tool-card">
+
+            <div class="card-number">19</div>
+
+            <div class="tool-icon blue">✓</div>
+
+            <div class="card-content">
+
+                <div class="card-category">PRODUCTIVITY</div>
+
+                <h3>To-Do List</h3>
+
+                <p>
+                    Keep track of your study tasks.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('todo')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+
+        <!-- FLASHCARDS -->
+
+        <article class="tool-card">
+
+            <div class="card-number">20</div>
+
+            <div class="tool-icon pink">FC</div>
+
+            <div class="card-content">
+
+                <div class="card-category">STUDY</div>
+
+                <h3>Flashcards</h3>
+
+                <p>
+                    Make simple flashcards for revision.
+                </p>
+
+            </div>
+
+            <button class="launch-btn"
+                    onclick="openTool('flashcards')">
+                Launch <span>→</span>
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section id="reviews"
+         class="reviews-section">
+
+    <div class="section-heading center">
+
+        <div class="section-label">
+            COMMUNITY
+        </div>
+
+        <h2>
+            What students
+            <span>think.</span>
+        </h2>
+
+        <p>
+            Your feedback helps us build better tools.
+        </p>
+
+    </div>
+
+
+    <div class="reviews-layout">
+
+        <div class="review-form-card">
+
+            <h3>Leave a review</h3>
+
+            <p class="form-subtitle">
+                One review per browser.
+            </p>
+
+            <label>Your name</label>
+
+            <input id="reviewName"
+                   type="text"
+                   maxlength="40"
+                   placeholder="Your name">
+
+
+            <label>Rating</label>
+
+            <div class="star-rating"
+                 id="starRating">
+
+                <button data-rating="1">★</button>
+                <button data-rating="2">★</button>
+                <button data-rating="3">★</button>
+                <button data-rating="4">★</button>
+                <button data-rating="5">★</button>
+
+            </div>
+
+
+            <label>Your review</label>
+
+            <textarea id="reviewText"
+                      maxlength="300"
+                      placeholder="Tell us what you think..."></textarea>
+
+
+            <button id="submitReview"
+                    class="review-submit">
+                Post Review →
+            </button>
+
+            <p id="reviewMessage"
+               class="review-message"></p>
+
+        </div>
+
+
+        <div class="reviews-list">
+
+            <div class="reviews-list-top">
+
+                <div>
+
+                    <span class="section-label">
+                        FEEDBACK
+                    </span>
+
+                    <h3>Recent reviews</h3>
+
+                </div>
+
+                <div id="averageRating"
+                     class="average-rating">
+                    ★ 0.0
+                </div>
+
+            </div>
+
+            <div id="reviewsContainer"
+                 class="reviews-container">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about"
+         class="about-section">
+
+    <div class="about-box">
+
+        <div class="section-label">
+            ABOUT
+        </div>
+
+        <h2>
+            Small tools.
+            <span>Big difference.</span>
+        </h2>
+
+        <p>
+            Student Toolkit is a collection of free utilities
+            designed around everyday student needs — from marks
+            and attendance to study planning and productivity.
+        </p>
+
+        <div class="about-line"></div>
+
+        <span class="about-note">
+            Built for students • Made to improve
+        </span>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- TOOL MODAL -->
+
+<div class="modal-overlay" id="toolModal">
+
+    <div class="tool-modal">
+
+        <button class="modal-close"
+                onclick="closeTool()">
+            ×
+        </button>
+
+        <div id="toolContent"></div>
+
+    </div>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <strong>Student Toolkit</strong>
+
+        <span>
+            Free tools for students.
+        </span>
+
+        <span>
+            © 2026 Student Toolkit
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
